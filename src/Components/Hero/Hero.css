@@ -1,0 +1,295 @@
+.hero {
+    height: 88vh;
+    margin-top: 20px;
+    /* border: 2px solid black; */
+    display: flex;
+}
+
+.hero .part {
+    height: 100%;
+    width: 50%;
+    position: relative;
+}
+
+.hero .part-2 {
+    position: relative;
+    display: flex;
+    justify-content: end;
+    padding-right: 20px;
+    overflow-x: hidden;
+}
+
+.hero .part-2 img {
+    height: 60%;
+    width: 60%;
+    object-fit: cover;
+    border-radius: 34px;
+    position: absolute;
+    bottom: 20px;
+}
+
+.hero .part-2 .image-2 {
+    position: absolute;
+    top: 10px;
+    right: 270px;
+    z-index: 99;
+}
+
+.hero .part-2 .image-1 {
+    z-index: 99;
+}
+
+.hero .part-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 30px;
+}
+
+.hero .part-1 h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 20px;
+    font-size: 2.2rem;
+}
+.hero .part-1 h1 span{
+    color: #007bff;
+}
+
+.hero .part-1 p {
+    width: 60%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+}
+
+.hero .part-1 .shopMore-cont {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+.hero .part-1 .shopMore {
+    width: 120px;
+    padding: 14px 0px;
+    border-radius: 12px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.hero .part-1 .shopMore:hover {
+    border: 2px solid black;
+    background-color: transparent;
+    color: black;
+}
+
+@media screen and (max-width: 1200px) {
+    .hero .part-1 h1 {
+        font-size: 2rem;
+    }
+    
+    .hero .part-1 p {
+        font-size: 1.4rem;
+        width: 70%;
+    }
+    
+    .hero .part-1 .shopMore-cont {
+        width: 70%;
+    }
+    
+    .hero .part-2 .image-2 {
+        right: 220px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .hero {
+        margin-top: 15px;
+    }
+    
+    .hero .part-1 {
+        padding: 0 25px;
+    }
+    
+    .hero .part-1 h1 {
+        font-size: 1.8rem;
+    }
+    
+    .hero .part-1 p {
+        font-size: 1.3rem;
+        width: 75%;
+    }
+    
+    .hero .part-1 .shopMore-cont {
+        width: 75%;
+    }
+    
+    .hero .part-2 {
+        padding-right: 15px;
+    }
+    
+    .hero .part-2 img {
+        width: 65%;
+        height: 55%;
+    }
+    
+    .hero .part-2 .image-2 {
+        right: 180px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        height: auto;
+        margin-top: 10px;
+    }
+    
+    .hero .part {
+        width: 100%;
+        height: auto;
+    }
+    
+    .hero .part-1 {
+        padding: 40px 20px;
+        text-align: center;
+        order: 1;
+    }
+    
+    .hero .part-1 h1 {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+    }
+    
+    .hero .part-1 p {
+        width: 100%;
+        font-size: 1.2rem;
+        margin-bottom: 25px;
+    }
+    
+    .hero .part-1 .shopMore-cont {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .hero .part-1 .shopMore {
+        width: 140px;
+        padding: 12px 0px;
+    }
+    
+    .hero .part-2 {
+        padding: 20px;
+        justify-content: center;
+        order: 2;
+        height: 350px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .hero .part-2 img {
+        width: 45%;
+        height: 80%;
+        position: relative;
+        bottom: auto;
+        top: auto;
+    }
+    
+    .hero .part-2 .image-1 {
+        right: 10px;
+        top: 0px;
+    }
+    
+    .hero .part-2 .image-2 {
+        left: 10px;
+        top: 0px;
+        right: auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero .part-1 {
+        padding: 30px 15px;
+    }
+    
+    .hero .part-1 h1 {
+        font-size: 1.6rem;
+        margin-bottom: 12px;
+    }
+    
+    .hero .part-1 p {
+        font-size: 1.1rem;
+        margin-bottom: 20px;
+    }
+    
+    .hero .part-1 .shopMore {
+        width: 130px;
+        padding: 10px 0px;
+        font-size: 0.9rem;
+    }
+    
+    .hero .part-2 {
+        padding: 15px;
+        height: 300px;
+    }
+    
+    .hero .part-2 img {
+        width: 48%;
+        height: 75%;
+        border-radius: 25px;
+    }
+    
+    .hero .part-2 .image-1 {
+        right: 5px;
+        top: 0px;
+    }
+    
+    .hero .part-2 .image-2 {
+        left: 5px;
+        top: 0px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .hero .part-1 {
+        padding: 25px 12px;
+    }
+    
+    .hero .part-1 h1 {
+        font-size: 1.4rem;
+        margin-bottom: 10px;
+    }
+    
+    .hero .part-1 p {
+        font-size: 1rem;
+        margin-bottom: 18px;
+    }
+    
+    .hero .part-1 .shopMore {
+        width: 120px;
+        padding: 8px 0px;
+        font-size: 0.85rem;
+    }
+    
+    .hero .part-2 {
+        padding: 12px;
+        height: 280px;
+    }
+    
+    .hero .part-2 img {
+        width: 50%;
+        height: 70%;
+        border-radius: 20px;
+    }
+    
+    .hero .part-2 .image-1 {
+        right: 2px;
+        top: 0px;
+    }
+    
+    .hero .part-2 .image-2 {
+        left: 2px;
+        top: 0px;
+    }
+}

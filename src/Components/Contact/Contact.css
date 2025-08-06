@@ -1,0 +1,199 @@
+.contact-cont {
+    height: 90vh;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-cont .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: max-content;
+    box-shadow: 0px 0px 7px black;
+    width: max-content;
+    padding: 50px 20px;
+
+}
+
+.contact-cont input {
+    height: 50px;
+    width: 300px;
+    border-radius: 15px;
+    border: 2px solid black;
+    outline: none;
+    margin-bottom: 20px;
+    padding: 5px 20px;
+    font-size: 1.3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.contact-cont input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+.contact-cont textarea {
+    height: 100px;
+    width: 300px;
+    border-radius: 15px;
+    border: 2px solid black;
+    outline: none;
+    padding: 15px 20px;
+    font-size: 1.3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 20px;
+    resize: vertical;
+    transition: all 0.3s ease;
+}
+
+.contact-cont textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+.contact-cont .submit-btn {
+    width: 120px;
+    padding: 14px 0px;
+    border-radius: 12px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.contact-cont .submit-btn:hover {
+    background: transparent;
+    color: black;
+    border: 2px solid black;
+}
+
+.contact-cont .result {
+    margin-top: 5px;
+    font-size: 1.1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@media screen and (max-width: 1024px) {
+    .contact-cont {
+        height: 85vh;
+        margin-top: 15px;
+    }
+
+    .contact-cont input,
+    .contact-cont textarea {
+        width: 280px;
+        font-size: 1.2rem;
+    }
+
+    .contact-cont input {
+        height: 48px;
+    }
+
+    .contact-cont textarea {
+        height: 95px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contact-cont {
+        height: 80vh;
+        margin-top: 10px;
+        padding: 20px;
+    }
+
+    .contact-cont input,
+    .contact-cont textarea {
+        width: 90%;
+        max-width: 400px;
+        font-size: 1.1rem;
+        margin-bottom: 18px;
+    }
+
+    .contact-cont input {
+        height: 45px;
+        padding: 5px 15px;
+    }
+
+    .contact-cont textarea {
+        height: 90px;
+        padding: 12px 15px;
+    }
+
+    .contact-cont .submit-btn {
+        width: 130px;
+        padding: 12px 0px;
+        font-size: 0.95rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contact-cont {
+        height: 75vh;
+        padding: 15px;
+    }
+
+    .contact-cont input,
+    .contact-cont textarea {
+        width: 100%;
+        max-width: 320px;
+        font-size: 1rem;
+        margin-bottom: 15px;
+        border-radius: 12px;
+    }
+
+    .contact-cont input {
+        height: 42px;
+        padding: 5px 12px;
+    }
+
+    .contact-cont textarea {
+        height: 80px;
+        padding: 10px 12px;
+    }
+
+    .contact-cont .submit-btn {
+        width: 120px;
+        padding: 10px 0px;
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .contact-cont {
+        height: 70vh;
+        padding: 12px;
+    }
+
+    .contact-cont input,
+    .contact-cont textarea {
+        width: 100%;
+        max-width: 280px;
+        font-size: 0.9rem;
+        margin-bottom: 12px;
+        border-radius: 10px;
+    }
+
+    .contact-cont input {
+        height: 40px;
+        padding: 5px 10px;
+    }
+
+    .contact-cont textarea {
+        height: 70px;
+        padding: 8px 10px;
+    }
+
+    .contact-cont .submit-btn {
+        width: 110px;
+        padding: 8px 0px;
+        font-size: 0.85rem;
+        border-radius: 10px;
+    }
+}
