@@ -1,0 +1,26 @@
+.scroll-to-top {
+  position: fixed;
+  bottom: 70px;
+  right: 10px;
+  background-color:transparent;
+  border: none;
+  outline: none;
+  width: 45px;
+  height: 45px;
+  font-size: 20px;
+  border-radius: 50%;
+  border: 2px solid black;
+  cursor: pointer;
+  z-index: 1000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scroll-to-top.show {
+  opacity: 1;
+  pointer-events: auto;
+}
